@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import WorkerDropdown from './WorkerDropdown'
+import WorkerDetails from './WorkerDetails'
 import axios from 'axios';
 
 import  './Main.css'
@@ -7,6 +8,24 @@ import  './Main.css'
 function Main({workers,workerId,fetchOldMessages}) {
 
   const [inputValue, setInputValue] = useState('');
+  const [workerInfo, setWorkerInfo] = useState({});
+
+  useEffect(() => {
+    fetchData();
+  }, [workerId]);
+
+
+  const fetchData =  () => {
+    try {
+      axios.get('http://localhost:50305/Messanger/getWorkerDetailsById/' + workerId).then(response =>{
+        setWorkerInfo(response.data[0]);
+      });
+      
+    } catch (error) {
+      console.error('Error fetching workers:', error);
+    }
+  };
+
 
   const addMessage=()=>{
     const data = {
@@ -34,7 +53,8 @@ function Main({workers,workerId,fetchOldMessages}) {
 
     return (
     <>
-      <div>Main</div>
+      <h1>Main</h1>
+      <WorkerDetails worker={workerInfo}/>
       <WorkerDropdown workers={workers} selectedWorkerId={workerId}/>
       
 

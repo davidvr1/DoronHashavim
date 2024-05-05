@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Massenger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e7042fe7e20df6cd25195878d36a27278359af7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Massenger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Massenger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

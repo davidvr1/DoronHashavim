@@ -31,3 +31,4 @@ C:\Users\דוד\Desktop\doron\Massenger\obj\Debug\net8.0\refint\Massenger.dll
 C:\Users\דוד\Desktop\doron\Massenger\obj\Debug\net8.0\Massenger.pdb
 C:\Users\דוד\Desktop\doron\Massenger\obj\Debug\net8.0\Massenger.genruntimeconfig.cache
 C:\Users\דוד\Desktop\doron\Massenger\obj\Debug\net8.0\ref\Massenger.dll
+C:\Users\דוד\Desktop\doron\Massenger\obj\Debug\net8.0\Massenger.sourcelink.json

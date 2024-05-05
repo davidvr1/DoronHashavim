@@ -32,5 +32,21 @@ namespace Massenger.Controllers
 
             return Ok(workersList);
         }
+
+        [HttpGet("getWorkerDetailsById/{id}")]
+        public IActionResult getWorkerDetailsById(int id)
+        {
+            
+            var workerInfo = _organizationService.GetWorkerList().Where(x=> x.Id==id).Select(x=> new WorkerFullInfo
+            {
+                DepartmentName = x.DepartmentType.ToString(),
+                FullName = x.Name + " " + x.LastName,
+                WorkerTitle = x.WorkerType.ToString(),
+                Address = x.Address,
+                Gender =x.Gender.ToString(),
+                Phone = x.PhoneNumber
+            });            
+            return Ok(workerInfo);
+        }
     }
 }
