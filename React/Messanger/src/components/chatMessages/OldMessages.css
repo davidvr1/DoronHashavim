@@ -1,0 +1,11 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ccc; /* Border style */
+    padding: 10px; /* Add padding for better spacing */
+    margin-bottom: 5px; /* Add margin between list items */
+    cursor:grab;
+  }
